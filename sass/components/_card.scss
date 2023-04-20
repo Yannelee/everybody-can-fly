@@ -1,0 +1,25 @@
+@mixin card($width, $height, $height-img){
+  background-color: rgba(255, 255, 255, 0.101);
+  border: solid rgba(255, 255, 255, 0.151);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  width: $width;
+  height: $height;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card__img{
+    object-fit: cover;
+    max-width: 100%;
+    height: $height-img;
+  }
+  .card__description{
+    font-weight: $light;
+    .card__precio{
+      font-weight: $bold;
+    }
+  }
+}

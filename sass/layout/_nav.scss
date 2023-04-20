@@ -1,0 +1,21 @@
+.nav{
+  background-color: $primary-color;
+  padding: 0.7rem 0.5rem;
+  
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  a{
+    text-decoration: none;
+    margin: 0 1rem;
+    color: $secondary-color;
+    font-size: $m;
+    font-weight: $light;
+    padding: 0.5rem;
+  }
+  a:hover{
+    color: $primary-highligth;
+    text-shadow: 0 0 1rem $primary-highligth, 0 0 2rem $primary-highligth;
+ }
+}

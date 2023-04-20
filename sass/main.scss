@@ -1,0 +1,88 @@
+@import 'base/base';
+@import 'base/resets';
+@import 'base/tipografia';
+
+@import 'layout/nav';
+@import 'layout/footer';
+
+@import 'components/botones.scss';
+@import 'components/card.scss';
+@import 'components/form';
+
+body{
+  font-family: $roboto;
+  color: $secondary-color;
+  background: 
+    linear-gradient(rgba($primary-color, 0.5), rgba($primary-color, 0.5)),
+    url('../../assets/imgs/star.jpeg') center top;
+  text-align: center;
+}
+
+//-AGREGAR DESCRIPCIONES, VALORES Y TOURS DE PAQUETES
+//-TERMINAR EL FORMULARIO
+.titulo{
+  font-weight: $black;
+  font-size: $xl;
+}
+
+.destinos{
+  background-color: rgba(255, 255, 255, 0.076);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .destinos__card{
+      .card__body{
+        @include card(14rem, 20rem, 8rem);
+        &:hover{
+        border: solid $primary-highligth;
+        box-shadow: 0 0 1rem $primary-highligth;
+        }
+      }
+      .card__button{
+        @include boton(60%, $m);
+      }
+    }
+  }
+}
+.paquetes{
+  background-color: rgba(255, 255, 255, 0.076);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__items{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 1rem;
+    .paquetes__flechas{
+      .flecha__link--left{
+        @include flecha;
+        left: 3em
+      }
+      .flecha__link--right{
+        @include flecha;
+        right: 3rem;
+      }
+    }
+    .paquetes__card{
+      .card__body{
+        @include card(none, 50rem, 35rem);
+        .card__description{
+          padding: 0 5rem;
+        }
+      }
+      .card__button{
+        @include boton(40%, $l);
+        font-size: $m;
+      }
+    }
+  }
+}

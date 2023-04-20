@@ -1,0 +1,22 @@
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  &__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: $light;
+    padding: 0 1rem;
+    background-color: $primary-color;
+    .footer__rrss a{
+      color: $secondary-color;
+      margin-left: 0.5rem;
+      cursor: pointer;
+      :hover{
+        color: $primary-highligth;
+        text-shadow: 0 0 1rem $primary-highligth;
+      }
+    }
+  }
+}

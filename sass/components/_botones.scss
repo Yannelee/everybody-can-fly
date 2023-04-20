@@ -1,0 +1,24 @@
+@mixin boton($width, $size) {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.4rem;
+  /* padding: 0.3rem 1.5rem; */
+  color: white;
+  border: solid rgba(255, 255, 255, 0.151);
+  width: $width;
+  &:hover{
+    cursor: pointer;
+    border: solid $primary-highligth;
+    box-shadow: 0 0 1rem $primary-highligth;
+    font-size: $size;
+  }
+}
+
+@mixin flecha {
+  position: absolute;
+  bottom: 50%;
+  :hover{
+    cursor: pointer;
+    color: $primary-highligth;
+    text-shadow: 0 0 1rem $primary-highligth;
+  }
+}

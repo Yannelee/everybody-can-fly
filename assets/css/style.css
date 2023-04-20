@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #000000;
+  padding: 0.7rem 0.5rem;
+}
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  text-decoration: none;
+  margin: 0 1rem;
+  color: #fffb1e;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+.nav a:hover {
+  color: #7cf54c;
+  text-shadow: 0 0 1rem #7cf54c, 0 0 2rem #7cf54c;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  padding: 0 1rem;
+  background-color: #000000;
+}
+.footer__items .footer__rrss a {
+  color: #fffb1e;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.footer__items .footer__rrss a :hover {
+  color: #7cf54c;
+  text-shadow: 0 0 1rem #7cf54c;
+}
+
+.form-contacto {
+  width: 100%;
+  margin: auto;
+}
+.form-contacto__cuerpo {
+  margin: auto;
+  width: 50%;
+}
+.form-contacto__datos {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+.form-contacto__datos label {
+  text-align: end;
+  width: 35%;
+}
+.form-contacto__datos input {
+  width: 50%;
+}
+.form-contacto__datos textarea {
+  width: 50%;
+}
+.form-contacto button {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.4rem;
+  /* padding: 0.3rem 1.5rem; */
+  color: white;
+  border: solid rgba(255, 255, 255, 0.151);
+  width: 10%;
+}
+.form-contacto button:hover {
+  cursor: pointer;
+  border: solid #7cf54c;
+  box-shadow: 0 0 1rem #7cf54c;
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fffb1e;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/imgs/star.jpeg") center top;
+  text-align: center;
+}
+
+.titulo {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.destinos {
+  background-color: rgba(255, 255, 255, 0.076);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+.destinos__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.destinos__items .destinos__card .card__body {
+  background-color: rgba(255, 255, 255, 0.101);
+  border: solid rgba(255, 255, 255, 0.151);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  width: 14rem;
+  height: 20rem;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.destinos__items .destinos__card .card__body .card__img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 8rem;
+}
+.destinos__items .destinos__card .card__body .card__description {
+  font-weight: 300;
+}
+.destinos__items .destinos__card .card__body .card__description .card__precio {
+  font-weight: 700;
+}
+.destinos__items .destinos__card .card__body:hover {
+  border: solid #7cf54c;
+  box-shadow: 0 0 1rem #7cf54c;
+}
+.destinos__items .destinos__card .card__button {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.4rem;
+  /* padding: 0.3rem 1.5rem; */
+  color: white;
+  border: solid rgba(255, 255, 255, 0.151);
+  width: 60%;
+}
+.destinos__items .destinos__card .card__button:hover {
+  cursor: pointer;
+  border: solid #7cf54c;
+  box-shadow: 0 0 1rem #7cf54c;
+  font-size: 1rem;
+}
+
+.paquetes {
+  background-color: rgba(255, 255, 255, 0.076);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.paquetes__items {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.paquetes__items .paquetes__flechas .flecha__link--left {
+  position: absolute;
+  bottom: 50%;
+  left: 3em;
+}
+.paquetes__items .paquetes__flechas .flecha__link--left :hover {
+  cursor: pointer;
+  color: #7cf54c;
+  text-shadow: 0 0 1rem #7cf54c;
+}
+.paquetes__items .paquetes__flechas .flecha__link--right {
+  position: absolute;
+  bottom: 50%;
+  right: 3rem;
+}
+.paquetes__items .paquetes__flechas .flecha__link--right :hover {
+  cursor: pointer;
+  color: #7cf54c;
+  text-shadow: 0 0 1rem #7cf54c;
+}
+.paquetes__items .paquetes__card .card__body {
+  background-color: rgba(255, 255, 255, 0.101);
+  border: solid rgba(255, 255, 255, 0.151);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  width: none;
+  height: 50rem;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paquetes__items .paquetes__card .card__body .card__img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 35rem;
+}
+.paquetes__items .paquetes__card .card__body .card__description {
+  font-weight: 300;
+}
+.paquetes__items .paquetes__card .card__body .card__description .card__precio {
+  font-weight: 700;
+}
+.paquetes__items .paquetes__card .card__body .card__description {
+  padding: 0 5rem;
+}
+.paquetes__items .paquetes__card .card__button {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.4rem;
+  /* padding: 0.3rem 1.5rem; */
+  color: white;
+  border: solid rgba(255, 255, 255, 0.151);
+  width: 40%;
+  font-size: 1rem;
+}
+.paquetes__items .paquetes__card .card__button:hover {
+  cursor: pointer;
+  border: solid #7cf54c;
+  box-shadow: 0 0 1rem #7cf54c;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

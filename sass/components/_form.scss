@@ -1,0 +1,26 @@
+.form-contacto{
+  width: 100%;
+  margin: auto;
+  &__cuerpo{
+    margin: auto;
+    width: 50%;
+  }
+  &__datos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+    label{
+      text-align: end;
+      width: 35%;
+    }
+    input{
+      width: 50%;
+    }
+    textarea{
+      width: 50%;
+    }
+  }
+  button{
+    @include boton(10%, $m);
+  }
+}
